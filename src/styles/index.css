@@ -1,12 +1,31 @@
 
-/* 
+h1 , p{
+    text-align:center;
+   
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.btn{
+    width: 100%;
+    padding: 10%;
+    margin: 0%;
 
-*/
+}.container{
+    background-color: black;
+    display: flex;
+    font-size: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    width: 90%;
+    justify-content: space-between;
+   
+}
+
+.background{
+    background-image: url("https://picsum.photos/id/83/200/500")
+};
+
+
+

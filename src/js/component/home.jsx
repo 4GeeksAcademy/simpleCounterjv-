@@ -1,26 +1,30 @@
-import React from "react";
+import React, { useState} from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+function Counters({seconds}){
+return (
+	<div className="background">
+		<h1>Simple Counter</h1>
+		<p>Jessica Valbuena</p>
+	<button type="button" className="btn">
+	<div className= "container">
+	<i class="fas fa-clock"></i>
+	<div className="two">{Math.floor(seconds / 100000) % 10}</div>
+	<div className="three">{Math.floor(seconds / 10000) % 10}</div>
+	<div className="four">{Math.floor(seconds / 1000) % 10}</div>
+	<div className="five">{Math.floor(seconds / 100) % 10}</div>
+	<div className="six">{Math.floor(seconds / 10) % 10}</div>
+	<div className="seven">{Math.floor(seconds / 1) % 10}</div>
+	</div>
+	</button>
+	</div>
+	
 
-export default Home;
+);
+}
+	
+
+export default Counters;
